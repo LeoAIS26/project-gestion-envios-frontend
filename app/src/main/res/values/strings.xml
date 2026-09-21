@@ -14,4 +14,9 @@
     <string name="nombre">Nombre</string>
     <string name="segundo_nombre">Segundo Nombre</string>
     <string name="telefono">Telefono</string>
+    <string name="agencia_destino">3. Agencia Destino</string>
+    <string name="detalles_paquete">4. Detalles del Paquete</string>
+    <string name="es_fragil">¿Es frágil?</string>
+    <string name="peso">Peso</string>
+    <string name="agregar_paquete">Agregar Paquete</string>
 </resources>

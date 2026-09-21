@@ -27,10 +27,10 @@
             />
         
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_remitente"
+            android:id="@+id/card_paquete_remitente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:contentPadding="10dp"
+            app:contentPadding="15dp"
             app:cardCornerRadius="15dp"
             android:layout_marginBottom="20dp"
             >
@@ -85,11 +85,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_destinatario"
+            android:id="@+id/card_paquete_destinatario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:contentPadding="10dp"
+            app:contentPadding="15dp"
             app:cardCornerRadius="15dp"
+            android:layout_marginBottom="20dp"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -189,5 +190,107 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_paquete_destino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="15dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agencia_destino"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <Spinner
+                        android:id="@+id/sp_agencia_envio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_agencia_destino"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_paquete_detalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="15dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detalles_paquete"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/et_peso"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/peso"
+                        android:inputType="text"
+                        android:layout_marginEnd="20dp"
+                        android:textSize="12sp" />
+                    <Switch
+                        android:id="@+id/sw_es_fragil"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/es_fragil"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agregar_paquete" />
     </LinearLayout>
 </ScrollView>
