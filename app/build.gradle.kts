@@ -13,7 +13,7 @@ android {
     defaultConfig {
         applicationId = "com.unu.edu.project_gestion_envios_frontend"
         minSdk = 26
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
