@@ -13,7 +13,7 @@
     <color name="onSecondary">#FFFFFF</color>
 
     <!-- Superficies y Fondos -->
-    <color name="background">#FCFCFF</color>
+    <color name="background">#F8F9FF</color>
     <color name="onBackground">#191C1E</color>
     <color name="surface">#FCFCFF</color>
     <color name="onSurface">#191C1E</color>

@@ -2,4 +2,16 @@
     <string name="app_name">project-gestion-envios-frontend</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registrar_nuevo_paquete">Registrar Nuevo Paquete</string>
+    <string name="datos_del_remitente">1. Datos del Remitente</string>
+    <string name="dni_remitente">DNI del remitente</string>
+    <string name="buscar">Buscar</string>
+    <string name="remitente_ejemplo">Juan Carlos Perez Torres - 987654321</string>
+    <string name="datos_del_destinatario">2. Datos del Destinatario</string>
+    <string name="apellido_paterno">Apellido Paterno</string>
+    <string name="apellido_materno">Apellido Materno</string>
+    <string name="dni">DNI</string>
+    <string name="nombre">Nombre</string>
+    <string name="segundo_nombre">Segundo Nombre</string>
+    <string name="telefono">Telefono</string>
 </resources>
